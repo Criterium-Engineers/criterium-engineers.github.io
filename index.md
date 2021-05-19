@@ -19,7 +19,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 #### Other work
 **Data Updates**: Changed the underlying data for several inspections per request of the Criterium Team. Where possible, we have added work items to unlock the ability for those changes to be made by authorized users.
 
-###05/03/2021 Release
+### 05/03/2021 Release
 
 #### Features
 **Change Observation Type**: is now available on the mobile application. Previously, once an Observation was made and the user navigated away from that screen, they no longer had the ability to change the observation type. This restriction has been removed.
