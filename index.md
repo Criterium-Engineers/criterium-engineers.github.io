@@ -15,6 +15,8 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Delete Inspection (Mobile)**: A user can now Delete any inspection if it is in an Active state. There is no recovering from this action, so it should be used carefully and sparingly.
 
+**Change Date of Inspection (Web)**: A user can now change the Date of Inspection from the Web, so an Inspection no longer needs to be declined to allow this to be changed on the Mobile app.
+
 #### Bugs Fixed
 **Inspection Details (Mobile)**: There have been instances where details such as Arrival Time or Check-in seem to disappear. Changes have been made to mitigate those occurences.
 
