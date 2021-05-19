@@ -16,9 +16,9 @@ As features are released and bugs are squashed, we will post updates to this pag
 **Delete Inspection (Mobile)**: A user can now Delete any inspection if it is in an Active state. There is no recovering from this action, so it should be used carefully and sparingly.
 
 #### Bugs Fixed
-**Inspection Details**: There have been instances where details such as Arrival Time or Check-in seem to disappear. Changes have been made to mitigate those occurences.
+**Inspection Details (Mobile)**: There have been instances where details such as Arrival Time or Check-in seem to disappear. Changes have been made to mitigate those occurences.
 
-**Duplicate Favorites**: This should resolve the duplication of Favorite Projects on the Mobile app.
+**Duplicate Favorites (Mobile)**: This should resolve the duplication of Favorite Projects on the Mobile app.
 
 #### Other work
 **Data Updates**: Changed the underlying data for several inspections per request of the Criterium Team. Where possible, we have added work items to unlock the ability for those changes to be made by authorized users.
@@ -26,20 +26,20 @@ As features are released and bugs are squashed, we will post updates to this pag
 ### 05/03/2021 Release
 
 #### Features
-**Change Observation Type**: is now available on the mobile application. Previously, once an Observation was made and the user navigated away from that screen, they no longer had the ability to change the observation type. This restriction has been removed.
+**Change Observation Type (Mobile)**: is now available on the mobile application. Previously, once an Observation was made and the user navigated away from that screen, they no longer had the ability to change the observation type. This restriction has been removed.
 
 #### Bugs Fixed
-**Dash in Project Code**: was causing some issues displaying Observation IDs. This has been resolved.
+**Dash in Project Code (Web & Mobile)**: was causing some issues displaying Observation IDs. This has been resolved.
 
-**Untyped Observations**:  were occurring when details were entered in a certain order (photos before text). Users can now collect Observation details in any order.
+**Untyped Observations (Mobile)**:  were occurring when details were entered in a certain order (photos before text). Users can now collect Observation details in any order.
 
-**Username**: mismatches were occurring for mixed-case users. The system has been updated to ignore the case of a username.
+**Username (Web & Mobile)**: mismatches were occurring for mixed-case users. The system has been updated to ignore the case of a username.
 
-**Double tapping observation types**: were causing duplicate observations to spawn. This has now been resolved.
+**Double tapping observation types (Mobile)**: were causing duplicate observations to spawn. This has now been resolved.
 
-**Site Check-in Search**: had unintended behavior where the keyboard would minimize after each character. This has been resolved.
+**Site Check-in Search (Mobile)**: had unintended behavior where the keyboard would minimize after each character. This has been resolved.
 
-**Location tags**: would not allow adding a location if it was a partial match to an existing location tag. This has been resolved.
+**Location Tags (Mobile)**: would not allow adding a location if it was a partial match to an existing location tag. This has been resolved.
 
 #### Other work
 **Allow of Backdating of Closing Observations**: to facilitate migration of historical reports.
