@@ -19,6 +19,33 @@ As features are released and bugs are squashed, we will post updates to this pag
 #### Other work
 **Data Updates**: Changed the underlying data for several inspections per request of the Criterium Team. Where possible, we have added work items to unlock the ability for those changes to be made by authorized users.
 
+###05/03/2021 Release
+
+#### Features
+**Change Observation Type**: is now available on the mobile application. Previously, once an Observation was made and the user navigated away from that screen, they no longer had the ability to change the observation type. This restriction has been removed.
+
+#### Bugs Fixed
+**Dash in Project Code**: was causing some issues displaying Observation IDs. This has been resolved.
+
+**Untyped Observations**:  were occurring when details were entered in a certain order (photos before text). Users can now collect Observation details in any order.
+
+**Username**: mismatches were occurring for mixed-case users. The system has been updated to ignore the case of a username.
+
+**Double tapping observation types**: were causing duplicate observations to spawn. This has now been resolved.
+
+**Site Check-in Search**: had unintended behavior where the keyboard would minimize after each character. This has been resolved.
+
+**Location tags**: would not allow adding a location if it was a partial match to an existing location tag. This has been resolved.
+
+#### Other work
+**Allow of Backdating of Closing Observations**: to facilitate migration of historical reports.
+
+**New Contacts**: no longer need an email address or phone number in order to be saved.
+
+**Report Enhancements**: have been made to help with readability.
+
+Various other non-user facing changes to improve performance and reliability
+
 #### Contact
 
 Questions about what you see here? Reach out to [Tim Torrisi](mailto:tim@clovehitchmanagement.com).
