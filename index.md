@@ -2,7 +2,7 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
-### Sprint 5 (May 03 - May 14 2021)
+### 05/17/2021 Release
 
 #### Features
 **Preliminary Action Summary (Mobile & Web)**: Now, when you have connectivity, you can trigger the generation of a Preliminary Action Summary report. This functionality is located in the 3-dot menu when you are in an inspection on CRISP Mobile. The PAS template is also available from the Web interface. The template itself is a work-in-progress, and is displaying only NCIs in the last-generation report format. This can and will be updated as needs change.
