@@ -11,10 +11,14 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Inspection Number Enhancement (Mobile & Web)**: On the mobile app, when creating a New Inspection the user will choose from a list of pre-defined types. Currently those include: Standard, Specialty - Window Water Test, Specialty - Mock Up, Specialty - Air Barrier, and Excluded. Excluded is by request of Deb Adams for special circumstances. Upon starting Review on the Web side, the Reviewing Engineer can choose to assign an inspection number based on where the inspection fits in with others of that type.
 
-**Allow Report Generation from Web Regardless of Status**: Previously, reports were only allowed to be generated in certain statuses. We have unlocked the capability to generate a report no matter what status an inspection is in.
+**Allow Report Generation from Web Regardless of Status (Web)**: Previously, reports were only allowed to be generated in certain statuses. We have unlocked the capability to generate a report no matter what status an inspection is in.
+
+**Delete Inspection (Mobile)**: A user can now Delete any inspection if it is in an Active state. There is no recovering from this action, so it should be used carefully and sparingly.
 
 #### Bugs Fixed
 **Inspection Details**: There have been instances where details such as Arrival Time or Check-in seem to disappear. Changes have been made to mitigate those occurences.
+
+**Duplicate Favorites**: This should resolve the duplication of Favorite Projects on the Mobile app.
 
 #### Other work
 **Data Updates**: Changed the underlying data for several inspections per request of the Criterium Team. Where possible, we have added work items to unlock the ability for those changes to be made by authorized users.
