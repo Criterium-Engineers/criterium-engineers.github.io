@@ -12,6 +12,6 @@ As features are released and bugs are squashed, we will post updates to this pag
 #### Other work
 
 
-### Contact
+#### Contact
 
 Questions about what you see here? Reach out to [Tim Torrisi](mailto:tim@clovehitchmanagement.com).
