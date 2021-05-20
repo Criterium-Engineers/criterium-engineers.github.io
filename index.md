@@ -1,4 +1,4 @@
-## Welcome to the Release Notes for CRISP by Criterium Engineers
+## Release Notes for CRISP by Criterium Engineers
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
