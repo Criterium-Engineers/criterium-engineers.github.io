@@ -2,6 +2,34 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+### 06/17/2021 Release
+
+#### Features
+**Project Phase (Mobile & Web)**: On the Web, a user can now define Units under each Phase. On Mobile, if more than one Phase is defined at the Project, a user will need to choose a Phase to create an Inspection against. **PLEASE NOTE THAT THIS FUNCTIONALITY SHOULD NOT BE USED YET AS OBSERVATIONS ARE NOT BEING SCOPED TO PHASE. THIS WILL BE ADDRESSED SOON**.
+
+**Hierarchy Scope (Web)**: On the Web, a user can now define the default Hierarchy Scope of a Project, similar to how they could do so in the Mobile app. This will flow through to the Mobile app. Changes on the Mobile app will flow through to the Web app as well. When starting a New Inspection, the selections made in Hierarchy Scope on Web or Mobile will show as the default choices while in Scoped mode.
+
+**Milestone Bundles and Templates (Web)**: On the Web, a user can now define a Milestone Bundle (a group of CSI Categories). These bundles can then be combined into a Milestone Template, which can be assigned to a Project. This functionality is building towards what is needed for clients such as K Hovnanian.  Additional work needs to be done on both Mobile and in the Report Template to complete this, but setup can now begin.
+
+**Observation Review Workflow Change (Web)**: On the Web, when a user clicks into an Observation it will open to the tab where action can be taken. In the case of a closing observation, that would be the resolution/correction. This is to reduce confusion when the APPROVE and DECLINE buttons are missing.
+
+**Save Photos to Library (Mobile)**: On the Mobile application, while in an Inspection a user can choose to Save Photos to Library from the Quick Action Menu. This will create an album in the Apple Photos app that contains all photos from that particular inspection.
+
+**Share Photo (Mobile)**: On the Mobile application, long-pressing on any photo will allow the user to Share a photo using any of the standard Apple methods, including Airdrop, Mail, Reminders, Notes, etc.
+
+**Revise Mode (Web): On the Web, a user now has the option to open any report that is in a 'Final' state (either Approved or Sent) to a 'Revising' state, where they can edit it without kicking it back to the EFT.
+
+**Reviewing Engineer Name on Inspections Grid (Web)**: The Reviewing Engineer is now displayed on the Inspections grid.
+
+**Add Multiple Photos from Library (Mobile)**: On the Mobile application, a user can now add multiple photos from the system Photos library. **PLEASE NOTE: This process is currently somewhat slow, and it might not be immediately obvious that the application is still working on adding photos. We will be adding a "loading spinner" in an upcoming release.**
+
+**Display Inspection Number in Inspections Grids (Web)**: Caleb's first contribution to the code! A user will now be able to see the Inspection Number from any of the tab-filtered Inspection Grids, if the number has been assigned.
+
+#### Bugs
+**Unable to Delete Location (Mobile)**: An intermittent issue where a user was not able to successfully delete a Location Group from an Observation has been resolved.
+
+**Unable to Generate Report (Web)**: An issue with timeout limits being hit during report generation has been resolved.
+
 ### 05/17/2021 Release
 
 #### Features
