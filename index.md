@@ -17,7 +17,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Share Photo (Mobile)**: On the Mobile application, long-pressing on any photo will allow the user to Share a photo using any of the standard Apple methods, including Airdrop, Mail, Reminders, Notes, etc.
 
-**Revise Mode (Web): On the Web, a user now has the option to open any report that is in a 'Final' state (either Approved or Sent) to a 'Revising' state, where they can edit it without kicking it back to the EFT.
+**Revise Mode (Web)**: On the Web, a user now has the option to open any report that is in a 'Final' state (either Approved or Sent) to a 'Revising' state, where they can edit it without kicking it back to the EFT.
 
 **Reviewing Engineer Name on Inspections Grid (Web)**: The Reviewing Engineer is now displayed on the Inspections grid.
 
