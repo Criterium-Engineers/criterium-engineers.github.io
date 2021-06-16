@@ -15,7 +15,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Save Photos to Library (Mobile)**: On the Mobile application, while in an Inspection a user can choose to Save Photos to Library from the Quick Action Menu. This will create an album in the Apple Photos app that contains all photos from that particular inspection.
 
-**Share Photo (Mobile)**: On the Mobile application, long-pressing on any photo will allow the user to Share a photo using any of the standard Apple methods, including Airdrop, Mail, Reminders, Notes, etc.
+**Share Photo (Mobile)**: On the Mobile application, long-pressing on any photo will allow the user to Share a photo using any of the standard Apple methods, including Airdrop, Mail, Reminders, Notes, etc. **PLEASE NOTE: Share to mail is currently not attaching the image to the message. This will be rectified in a later release since it is not mission-critical**
 
 **Revise Mode (Web)**: On the Web, a user now has the option to open any report that is in a 'Final' state (either Approved or Sent) to a 'Revising' state, where they can edit it without kicking it back to the EFT.
 
