@@ -21,7 +21,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Reviewing Engineer Name on Inspections Grid (Web)**: The Reviewing Engineer is now displayed on the Inspections grid.
 
-**Add Multiple Photos from Library (Mobile)**: On the Mobile application, a user can now add multiple photos from the system Photos library. **PLEASE NOTE: This process is currently somewhat slow, and it might not be immediately obvious that the application is still working on adding photos. We will be adding a "loading spinner" in an upcoming release.**
+**Add Multiple Photos from Library (Mobile)**: On the Mobile application, a user can now add multiple photos from the system Photos library. **PLEASE NOTE: This process is currently somewhat slow, and it might not be immediately obvious that the application is still working on adding photos. We will be adding a "loading spinner" in an upcoming release. We are also artificially limiting this to 5 at a time so that it does not seem like the app has locked up.**
 
 **Display Inspection Number in Inspections Grids (Web)**: Caleb's first contribution to the code! A user will now be able to see the Inspection Number from any of the tab-filtered Inspection Grids, if the number has been assigned.
 
