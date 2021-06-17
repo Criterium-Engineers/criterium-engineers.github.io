@@ -5,7 +5,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 ### 06/17/2021 Release
 
 #### Features
-**Project Phase (Mobile & Web)**: On the Web, a user can now define Units under each Phase. On Mobile, if more than one Phase is defined at the Project, a user will need to choose a Phase to create an Inspection against. **PLEASE NOTE THAT THIS FUNCTIONALITY SHOULD NOT BE USED YET AS OBSERVATIONS ARE NOT BEING SCOPED TO PHASE. THIS WILL BE ADDRESSED SOON**.
+**Project Phase (Mobile & Web)**: On the Web, a user can now define Units under each Phase. On Mobile, if more than one Phase is defined at the Project, a user will need to choose a Phase to create an Inspection against. **PLEASE NOTE THAT THIS FUNCTIONALITY SHOULD NOT BE USED YET AS OBSERVATIONS ARE NOT BEING SCOPED TO PHASE. THIS WILL BE ADDRESSED SOON. THE REPORT OUTPUT ALSO NEEDS TO BE UPDATED TO REFLECT PHASES**.
 
 **Hierarchy Scope (Web)**: On the Web, a user can now define the default Hierarchy Scope of a Project, similar to how they could do so in the Mobile app. This will flow through to the Mobile app. Changes on the Mobile app will flow through to the Web app as well. When starting a New Inspection, the selections made in Hierarchy Scope on Web or Mobile will show as the default choices while in Scoped mode.
 
