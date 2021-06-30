@@ -2,6 +2,36 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 07/01/2021 Release
+
+#### Features
+**Retrigger Weather from Web (Web)**: On the Web, a user can now retrigger the API call to grab the weather in the event that the EFT does not have connectivity when they set the inspection date and arrival time on the Mobile application. This is still subject to a 5-day historical limit, after which the API call will fail. We have functionality mid-flight that will allow completely manual population of the weather fields to cover this case.
+
+**Weather Visibility in Web (Web)**: On the Web, a user can now see the weather observations from the Inspection Details, along with the rest of the Field Notes data.
+
+**Reviewing Engineer Assignment (Web)**: Per Criterium request, we changed the way that a Reviewing Engineer is assigned at to an Inspection. Upon Inspection creation, the Inspection Instance will be assigned the Project-level Reviewing Engineer. This will show in the Inspections grids in the Web application. If a different Reviewing Engineer starts the review process, that Reviewing Engineer will become the one that shows on both the Inspections grids as well as the report output.
+
+**Landscape Mode (Mobile)**: The CRISP Mobile application can now be used in Landscape mode, per user request. No adjustments have been made, so there may be instances where the veritical scrolling is not optimal for this mode. We can enhance further in a future UI redesign effort if necessary.
+
+**Phase Name Editing (Web)**: Previously, once a Phase name had been entered it could not be edited. This has been enhanced so that a Phase name can be modified freely.
+
+**Unit Name Editing (Web)**: Previously, once a Unit had been entered it could not be edited. This has been enhanced so that a Unit can be modified freely.
+
+**Report Output Scoped to Phase (Web)**: To finish off the Phase functionality, we have scoped the Report Output to only show Observations from within the same phase.
+
+**Project Details > Outstanding Items Scoped to Phase (Mobile)**: To finish off the Phase functionality, we have added controls to scope the Project Details > Outstanding Items view on the Mobile application. It will default to "All Phases" to show a holistic view of the Project, but can be scoped to any single phase.
+
+**Inspection Details > Prior Items and Observations (Mobile)**: To finish off the Phase functionality, we have changed the scope of the Prior Items and Observations views so that they only show data from the Phase that they are associated with.
+
+**Milestone Inspection Usage (Mobile)**: We have added several pieces of functionality to allow EFTs to complete "Milestone"-type inspections. There are changes to the new inspection workflow that will automatically scope the CSI categories for the EFT based on what Milestone(s) they choose for an inspection. This will also drive several new user interface controls on the Inspection Details view to allow the EFT to select a Phase or Unit that was inspected to complete a Milestone. The tracking of "Milestone" visits versus "Correction" visits is handled in the application back-end, so the EFT does not need to worry about tracking them any differently. **CURRENTLY THE ONLY PLACE TO CHOOSE YOUR MILESTONES IS DURING THE NEW INSPECTION WORKFLOW, BUT THIS WILL BE UPDATED IN A FUTURE RELEASE SO IT CAN BE MODIFIED AT WILL**
+
+**Milestone Inspection Matrix (Web)**: We have added a matrix-style display of Milestones and Units on the Inspection Details page to allow the Reviewing Engineer to see what Milestones the EFT has completed. This is editable by the Reviewing Engineer or Project Admin when the inspection is in an editable status.
+
+#### Infrastructure Updates
+
+**Upgrade the AWS Amplify CLI**: Amazon Web Services released some infrastructure updates that address several common issues that have been causing weirdness in the data. We expect this update to cut down the frequency of these data problems significantly.
+
+
 ### 06/17/2021 Release
 
 #### Features
