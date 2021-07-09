@@ -2,6 +2,13 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 07/09/2021 Release
+
+#### Infrastructure Updates / Bug Fixes
+**Deleting Observations Bug (Mobile)**: This release fixes an issue that occurred when an Observation with a custom Inspection Point was deleted. If that custom Inspection Point was used in other observations, the Inspection Point would be removed from those Observations as well and it would be stuck in an uneditable state.
+
+**Inspections Stuck on iPad (Mobile)**: This release should also resolve any occurrences of Inspections getting "stuck" on the iPad by changing how the user record is persisted. If you notice this happening still, please reach out to Deb Adams immediately.
+
 ## 07/01/2021 Release
 
 #### Features
