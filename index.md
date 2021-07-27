@@ -2,6 +2,31 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 07/27/2021 Release
+
+#### Features
+**Designate Primary Location Group (Web & Mobile)**: Users of both the Web application as well as CRISP Mobile can now designate which Location Group should be considering the Primary Location. This determines what will show in the Report Output Template grids. On the Web this is done using the Primary checkbox. You need to be in Edit mode for this action to be taken, and immediately after, you will exit edit mode. On Mobile, the primary Location Group displays first. Additional Location Groups will now display a hamburger menu with Set as Primary and Delete as options. This adds to the existing functionality that allows users on both Web and Mobile to designate the Primary Photo within a location group.
+
+**Add Photos (Web)**: Users of the Web application can now add photos to NCI/IOC/CI observations by entering into Edit Mode while in Submitted or In Review status. Immediately after uploading photos, the user will be taken out of Edit Mode. Depending on the size of the photo(s) uploaded, it may take several seconds for them to show up in the user interface.
+
+**PDF Report Output Naming (Web)**: When generating and then saving the PDF Report Output, it will automatically be named in the following format: Client Name - Project Name - Phase (if available) - Inspection # (including code, if not Standard) - Inspection Date (MM-DD-YYYY).pdf
+
+**Manual Weather Editing (Web)**: Weather can now be editing directly in the Inspection Details section of the Wep application. This will help in situations where the historical Weather API window has passed (limited to 5 days previous). Instead of editing the Field Notes section to document weather conditions, they can now be entered here and be displayed exactly as if the API had populated them. It will also allow for changes in the rare case that the Weather API conditions did not match the conditions on site.
+
+**Milestone Inspection Workflow (Mobile)**: We have removed the need to select which Milestones are being inspected during the New Inspection workflow. All Milestones in a Template will automatically be selected each time a new Inspection is created.
+
+
+
+#### Bugs
+**Mobile Performance Improvements (Mobile)**: We seemed to reach a critical volume of data after which the Mobile application took a severe performance hit. This is an ongoing item, but by removing some of the aggregations, we were able to improve performance significantly. The most obvious changes are the removal of the NCI and IOC counts in several places, including the My Projects and All Projects screens and Project Details > Inspections screens.
+
+**Template Status Column (Web)**: Due to a bug, the Status column in the Templates section of the Web application was not properly populating. This is now resolved.
+
+**Order of Milestones Not Being Respected (Web & Mobile)**: Since Milestones occur in a specific order, we fixed a bug that was allowing them to shuffle around. They will now show in the exact order that they are in the Milestone Template.
+
+**Not Able to Delete Observation Photo (Web)**: There was a bug report regarding the removal of photos failing. This has been resolved.
+
+
 ## 07/09/2021 Release
 
 #### Infrastructure Updates / Bug Fixes
