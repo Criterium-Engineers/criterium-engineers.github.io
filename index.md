@@ -11,7 +11,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **PDF Report Output Naming (Web)**: When generating and then saving the PDF Report Output, it will automatically be named in the following format: Client Name - Project Name - Phase (if available) - Inspection # (including code, if not Standard) - Inspection Date (MM-DD-YYYY).pdf
 
-**Manual Weather Editing (Web)**: Weather can now be editing directly in the Inspection Details section of the Wep application. This will help in situations where the historical Weather API window has passed (limited to 5 days previous). Instead of editing the Field Notes section to document weather conditions, they can now be entered here and be displayed exactly as if the API had populated them. It will also allow for changes in the rare case that the Weather API conditions did not match the conditions on site.
+**Manual Weather Editing (Web)**: Weather can now be editing directly in the Inspection Details section of the Web application. This will help in situations where the historical Weather API window has passed (limited to 5 days previous). Instead of editing the Field Notes section to document weather conditions, they can now be entered here and be displayed exactly as if the API had populated them. It will also allow for changes in the rare case that the Weather API conditions did not match the conditions on site.
 
 **Milestone Inspection Workflow (Mobile)**: We have removed the need to select which Milestones are being inspected during the New Inspection workflow. All Milestones in a Template will automatically be selected each time a new Inspection is created.
 
