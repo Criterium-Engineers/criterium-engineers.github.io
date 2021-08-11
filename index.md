@@ -2,6 +2,25 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 08/12/2021 Release
+
+#### Notes
+We are currently investigating an issue where when a CRISP Mobile user adds a photo, it does not appear. In most cases the photo is actually added, and will show if the user changes screens and goes back. Trouble seems to occur when the user keeps trying to add the photo, it ends up showing up multiple times, and then either takes action to delete the photos or the entire observation.
+
+**If you add a photo, and it does NOT appear, please leave that screen and then navigate back to it. Your photo will most likely appear. If this does NOT work, please reach out for support**
+
+#### Features
+**Status Change Notifications (Web & Mobile)**: Users associated with a Project will now be notified via email of changes in status. Included on the notification email: The EFT who submitted the Inspection, the Project Admin for the Project, the Reviewing Engineer for the Project, and the user who reviews the inspection (if different from the Project Reviewing Engineer.
+
+**Project Path (Web)**: A field has been added to the Project Details that is meant to hold the Project Path attribute from the Criterium ERP system (currently InFocus).
+
+**Display Phase on Inspection List (Mobile)**: Phase Name has been added to the Project Details > Inspections screen. There is a bit of work to be done around formatting, but we will be tackling adding in the Inspection Number soon and can correct the display formatting once that is integrated.
+
+#### Troubleshooting Features
+**Export Single Inspection Data (Mobile)**: We have seen rare instances where, likely due to application load, certain pieces of Inspection data fail to save to local storage. The Inspection appears otherwise to be normal because the application is aware of the data in memory. If, during troubleshooting, a member of the Software Team asks for a single-inspection export, it will be available from within the Inspection itself. You will need to navigate to the triple-dot menu (where the PAS is triggered), choose Export Data, and then choose your email client (Mail or Outlook). The inspection data will be sent in the body of an email to an address that the Software Team will provide.
+
+**Find Orphaned Photos (Mobile)**: We have seen rare instances where, likely due to application load, photos get orphaned on the iPad storage but do not make it to the backend. If, during troubleshooting, a member of the Software Team asks you to check for orphaned photos, simply navigate to the Settings screen and tap the "Recover Photos" button. If any meet the criteria, a new album will be created in the Photos app and these photos will be added to it.
+
 ## 07/27/2021 Release
 
 #### Features
