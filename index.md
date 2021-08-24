@@ -2,6 +2,27 @@
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 08/25/2021 Release
+
+#### Notes
+We believe we have fixed most issues dealing with photos and data not showing in certain cases after they are added. Please reach out immediately if you still see bad behavior after upgrading to the newest version of CRISP Mobile
+
+We are now enforcing some rules around favorites and photo sync. Now, the mobile app will only sync DOWN photos from Favorite projects to cut down on bandwidth and storage requirements
+
+#### Features
+**Inspection Number Helper Enhancement (Web)**: In order to help Reviewing Engineers and Admins properly number inspections, we have added a feature that filters the Inspection Number Helper by phase.
+
+**PAS Report Output (Web & Mobile)**: The PAS report output now includes all unreviewed NCI and IOC observations
+
+**Report Output Provider (Web & Mobile)**: We have switched from the SaaS version of JSReports to the self-hosted version. No changes should be noticible, but it will mitigate any timeouts
+
+**Report Output Change - Milestones (Web)**: The report output for Milestone inspections will now include ALL milestones, regardless of whether an inspection has been done against them or not
+
+**Project Details > Contacts (Web)**: Contacts that have been previously associated with the client will be prioritized at the top of the contacts list when adding new contacts
+
+**Swap Observation Text for Primary Location/Primary Photo Description (Mobile)**: In place of the Observation Text we now surface the Description of the Primary Photo from the Primary Location
+
+
 ## 08/12/2021 Release
 
 #### Notes
