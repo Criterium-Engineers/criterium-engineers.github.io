@@ -5,6 +5,8 @@ As features are released and bugs are squashed, we will post updates to this pag
 ## 08/25/2021 Release
 
 #### Notes
+***We have had several reports of problems adding and removing favorites. The root-cause appears to be related to having the ability to add/remove favorites both from the Projects > All screen and from within an individual Project. For the time being, we have removed the ability to add/remove Favorites from within the Project. All changes should be made from the Projects > All screen. A Project that is a favorite will still display a star within the Project Details screen, but it will not be tappable.***
+
 We believe we have fixed most issues dealing with photos and data not showing in certain cases after they are added. Please reach out immediately if you still see bad behavior after upgrading to the newest version of CRISP Mobile
 
 We are now enforcing some rules around favorites and photo sync. Now, the mobile app will only sync DOWN photos from Favorite projects to cut down on bandwidth and storage requirements
