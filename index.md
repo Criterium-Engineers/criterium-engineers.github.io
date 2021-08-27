@@ -12,7 +12,7 @@ We believe we have fixed most issues dealing with photos and data not showing in
 We are now enforcing some rules around favorites and photo sync. Now, the mobile app will only sync DOWN photos from Favorite projects to cut down on bandwidth and storage requirements
 
 #### Features
-**Inspection Number Helper Enhancement (Web)**: In order to help Reviewing Engineers and Admins properly number inspections, we have added a feature that filters the Inspection Number Helper by phase.
+**Inspection Number Helper Enhancement (Web)**: In order to help Reviewing Engineers and Admins properly number inspections, we have added a Phase.
 
 **PAS Report Output (Web & Mobile)**: The PAS report output now includes all unreviewed NCI and IOC observations
 
