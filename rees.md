@@ -6,3 +6,8 @@ filename: rees.md
 ---
 
 ## Video Walk-throughs for the new CRISP REES App
+
+### Video Demo 1:  Project Details
+
+
+### Video Demo 2: Data Collection
