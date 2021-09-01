@@ -1,5 +1,6 @@
 ---
 title: CRISP REES
 layout: template
-filename: rees.md
+filename: REES.md
 --- 
+This site contains the video walkthroughs for the new CRISP REES Product
