@@ -8,6 +8,9 @@ filename: rees.md
 ## Video Walk-throughs for the new CRISP REES App
 
 ### Video Demo 1:  Project Details
-
+<video src="https://rees-videos.s3.amazonaws.com/REES+-+Project+Details.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 ### Video Demo 2: Data Collection
+<video src="https://rees-videos.s3.amazonaws.com/REES+-+Project+Details.mp4" controls="controls" style="max-width: 730px;">
+</video>
