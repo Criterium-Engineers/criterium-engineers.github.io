@@ -12,5 +12,5 @@ filename: rees.md
 </video>
 
 ### Video Demo 2: Data Collection
-<video src="https://rees-videos.s3.amazonaws.com/REES+-+Project+Details.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://rees-videos.s3.amazonaws.com/REES+-+Data+Collection.mp4" controls="controls" style="max-width: 730px;">
 </video>
