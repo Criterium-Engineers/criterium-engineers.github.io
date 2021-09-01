@@ -1,7 +1,7 @@
 ---
 theme: jekyll-theme-slate
 title: CRISP REES
-layout: template
+description: The home for CRISP REES
 filename: rees.md
 ---
 
