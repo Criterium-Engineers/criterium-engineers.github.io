@@ -1,6 +1,5 @@
 ---
 title: CRISP by Criterium Engineers Release Notes
-description: The home to all CRISP Release Notes.
 ---
 ## Release Notes for CRISP by Criterium Engineers
 
