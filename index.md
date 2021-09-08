@@ -5,6 +5,13 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 09/08/2021 Release
+
+#### Features
+**Inspection Number Helper Enhancement 2 (Web)**: The inspection number helper will now filter by the current inspection phase
+
+**Site Progress Photo Uploads (Web)**: Site Progress Photos can now be uploaded from the CRISP Web side to any Inspection that is in an editable status.
+
 ## 08/25/2021 Release
 
 #### Notes
