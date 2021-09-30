@@ -5,6 +5,19 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 09/30/2021 Release
+
+#### Notes
+***Significant work has been done to improve performance of the CRISP Mobile application over the last week, culminating in a release being finalized for 09/30/2021. Please let us (Deb Adams, Caleb Pusey) know if you notice any problems. Our plan is to further optimize performance over the coming weeks and to make future upgrades more seamless***
+
+**Switched on-device data storage to a more responsive system (SQLite, for both inspection data as well as photos)**
+
+**Reduced amount of times the screen needs to be re-rendered based on new data arriving on the device**
+
+**Updated the sync status indicator to give EFTs better visibility into when the app is busy syncing**
+
+**Added a waiting delay on creating a new Observation to allow the system to ensure all data is present before the Observation is created. This should significantly reduce errors where Observations do not make it off of the mobile device**
+
 ## 09/08/2021 Release
 
 #### Features
