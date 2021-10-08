@@ -5,6 +5,16 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 10/8/2021 Release
+
+This was a web only release with a few changes for the standard report.
+
+#### Features
+**Open IOCs and NCIs are now ordered by date and then code in ascending order.
+
+**The additional inspection log for milestone visits has been moved to the end of the field notes section. The field notes have been broken
+  into two columns for a less crowded look.
+
 ## 09/30/2021 Release
 
 #### Notes
