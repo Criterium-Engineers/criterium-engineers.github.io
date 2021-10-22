@@ -5,6 +5,17 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 10/22/2021 Release
+
+#### Notes
+
+***This release is mainly back-end changes that will allow for more rapid development and deployment in the future.***
+
+#### Features
+**Take Another Photo (Mobile)**: The camera module has been changed to allow for multiple photo capture from within CRISP. This breaks the undocumented feature of using the volume buttons to activate the shutter, but we have a solution for that in the backlog.
+
+**Extra Locations (Web/Report)**: At some point there was a regression and "extra" locations stopped printing out on the Standard Report Output. This has been resolved.
+
 ## 10/8/2021 Release
 
 #### Notes
