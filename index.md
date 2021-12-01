@@ -13,7 +13,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 - For mobile, a new scroll bar has been added to the selector for phases so that it is more apparent that there are more choices.
 
-- The order of site progress and observation photos will be the same on reports as they are when viewed in the app.
+- The order of site progress and observation photos will be the same on reports as they are when viewed in the web app.
 
 - When a report is submitted on mobile, the status will display 'Submitting' until the report is actually received on the backend. It will then display 'Submitted'. This should help EFTs to discern the true status of the report.
 
