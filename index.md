@@ -9,13 +9,10 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 #### Features
 
-- On both mobile and web platforms there is now the ability to change the date on a closing observation so that it is different from the inspection date.
-
-- For mobile, a new scroll bar has been added to the selector for phases so that it is more apparent that there are more choices.
+- On the web platform there is now the ability to change the date on a closing observation so that it is different from the inspection date.
 
 - The order of site progress and observation photos will be the same on reports as they are when viewed in the web app.
 
-- When a report is submitted on mobile, the status will display 'Submitting' until the report is actually received on the backend. It will then display 'Submitted'. This should help EFTs to discern the true status of the report.
 
 ## 10/25/2021 Release
 
