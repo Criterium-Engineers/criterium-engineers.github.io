@@ -5,6 +5,30 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 12/20/2021 Release
+
+#### Notes
+
+For MOBILE users: This is a Native Build Update, THROUGH THE APP STORE. These need to be done from time to time for maintenance. You do NOT need to turn off Auto-Updates this time, but you can if you prefer to manually control when the system updates.
+
+#### Features
+
+Bug Fix – the bug that surfaced with the last OTA (over the air) update has been resolved with this build.
+
+ 
+
+**Correction / Resolution Date** – on both MOBILE and WEB you will now have the ability to set a correction / resolution date that is different from the inspection date to allow for off-cycle corrections that may be received virtually. If utilizing this feature, add a notation to the Field Notes and the Internal Comments to reference the date change.
+
+ 
+
+**Submitting Status Indicator** – for MOBILE users, when an inspection report is submitted the status badge will indicate “Submitting” until the app confirms the WEB side has updated to Submitted Status (at which point the MOBILE side will update to “Submitted”).
+
+For WEB users, Reviewing Engineers can start a Review for reports that show either Submitted or Submitting.
+
+ 
+
+**New Scroll Bar for Phase Selection** – Previously, projects with more than 3 Phases had limitations on the full list of Phases when starting a new inspection. The New Scroll Bar improves functionality to allow easy selection of Phase.
+
 ## 12/1/2021 Release
 
 #### Features
