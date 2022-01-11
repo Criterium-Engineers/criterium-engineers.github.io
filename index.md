@@ -5,6 +5,24 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 1/11/2022 Release
+
+#### Notes
+
+This is a web only release.
+
+#### Features
+
+**Reorder Inspection and Observation Photos** – Photos can be dragged and dropped into a specific order which will be refelected on the Standard Report.
+
+**Delete an Observation** - Observations can now be deleted when an inspection is in Reviewing or Revising.
+
+**PAS Report** - The PAS Report has been restructured as follows:
+
+All Open NCIs/IOCs - both prior items and unreviewed NEW items. Newly Closed  NCIs/ IOCs - any reviewed or unreviewed corrections that have not appeared on previous reports. This includes any items closed on the associated inspection date and corrections with overridden dates that were created with this report.
+The PAS will not print the full record of all prior items if they appeared closed on a previous report.
+
+
 ## 12/20/2021 Release
 
 #### Notes
