@@ -13,7 +13,7 @@ This is a web only release.
 
 #### Features
 
-**Reorder Inspection and Observation Photos** – Photos can be dragged and dropped into a specific order which will be refelected on the Standard Report.
+**Reorder Inspection and Observation Photos** – Photos can be dragged and dropped into a specific order which will be reflected on the Standard Report.
 
 **Delete an Observation** - Observations can now be deleted when an inspection is in Reviewing or Revising.
 
