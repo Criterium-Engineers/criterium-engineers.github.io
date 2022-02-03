@@ -5,6 +5,25 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 2/3/2022 Release
+
+#### Notes
+
+This is an update for both web and mobile.
+
+#### Features
+
+**For mobile** - Photos can be dragged and dropped into a specific order which will be reflected on the Standard Report.
+
+**For web** - There is a new custom report template for Fairfield Residential.
+
+#### Bug Fixes
+
+**For mobile** - Prior items now updates more quickly after deleting a closing observation, making it harder to close an observation multiple times.
+
+**For web** - The pending tab for observations has been fixed.
+
+
 ## 1/11/2022 Release
 
 #### Notes
