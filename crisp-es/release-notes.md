@@ -5,6 +5,26 @@ title: CRISP-ES by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+
+## 02/14/2022 Release
+
+#### Notes
+This is an update for both Web and Mobile. The Mobile update is via an OTA (over-the-air) process within the app itself. You should ONLY be prompted to update if you have no outstanding items that have not synced to the back end. If you force the update (via the Settings page) you risk losing unsynced data.
+
+#### Features
+
+**Super Admin Permissions Adjustment (Web)** - Adjust who can add or remove Super Admin permissions from user accounts
+
+#### Bugs
+
+**Text Annotations (Web)** - Fixing broken Text Annotation tool
+
+**Report Output (Web)** - Fixing layout when using non-square photos
+
+**Change State to Required (Web)** - Update form to require State to be selected
+
+**Fix Country Default (Web)** - Saving a Project when United States is selected by default was not persisting the Country selection
+
 ## 02/04/2022 Release
 
 #### Notes
