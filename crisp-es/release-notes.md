@@ -5,6 +5,22 @@ title: CRISP-ES by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 03/18/2022 Release
+
+#### Notes
+This is an update for both Web and Mobile, mostly focusing on bugf fixes. The Mobile update is via an OTA (over-the-air) process within the app itself. You should ONLY be prompted to update if you have no outstanding items that have not synced to the back end. If you force the update (via the Settings page) you risk losing unsynced data.
+
+#### Bugs
+
+**Admin Privilege Fixes (Web)** - Fixing various issues with Admin permissions, including changing the Office logo and adding new users
+
+**Photo Upload Size Limit (Web)** - Work has been done to remove a limit on the size of photo uploads. Testing has been done on images ~ 8.5MB in size, uploading 10 concurrently. Theoretically, there should be no upper limit on either size or concurrent uploads now
+
+**Project Sharing (Web)** - Fixed a bug where sharing of projects did not work in certain situations
+
+#### Features
+
+**Warn User When Exiting Camera (Mobile)** - We have enhanced the photo capture to warn a user that they have not saved/finalized photos if they try to exit the camera capture portion of the application
 
 ## 02/14/2022 Release
 
