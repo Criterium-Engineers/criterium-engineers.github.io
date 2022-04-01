@@ -5,6 +5,14 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 4/1/2022 Release
+
+#### Notes
+
+This is an update for both web and mobile. It is a 'tech debt' release to upgrade the libraries the apps run on.
+
+**For mobile** - The pending photo upload count in settings now accurately reflects all photos waiting to be synced, including failed and in process transfers.
+
 ## 2/3/2022 Release
 
 #### Notes
