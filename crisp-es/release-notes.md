@@ -17,7 +17,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **App Icon Update (Mobile)** - The app icon has been updated to make it easier to differentiate from the CRISP-CES icon. This update will occur when the next non-OTA build is released.
 
-**Sync Expiration Option (Mobile)** - In order to keep the amount of data being synced to the Mobile device reasonable, we have implemented Sync Expiration options. Users will be able to choose between 30 days (default), 60 days, and Unlimited. After the expiration, data is NOT deleted from the Mobile device, but is hidden and will no longer stay in sync with changes made on the Web.
+**Sync Expiration Option (Mobile)** - In order to keep the amount of data being synced to the Mobile device reasonable, we have implemented Sync Expiration options. Users will be able to choose between 30 days (default), 60 days, and Unlimited. After the expiration, data is NOT deleted from the Mobile device and will still be shown until the user clears their local data store.
 
 #### Bugs
 
