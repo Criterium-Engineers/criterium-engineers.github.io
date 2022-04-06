@@ -5,10 +5,32 @@ title: CRISP-ES by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 04/08/2022 Release
+
+**Copy Photo to Another System (Web & Mobile)** - Using the triple dot menu visible wherever a photo is displayed, the user can now choose 'Copy', which will allow them to assign a photo to another system. This creates a copy so that it can be annotated differently.
+
+**Restore Original Photo (Web & Mobile)** - Buttons have been added to both the Mobile Annotator and the Web Annotator to allow a user to revert to the original photo, even after it has been annotated or cropped. On Mobile, this will ONLY work if the Original is still available. The only case where it may not be is when a user has cleared their local data store after capturing the photo.
+
+**Project Editability (Mobile)** - Additional restrictions on editing have been made so that if a Project is marked as Inactive or Complete, it will no longer be editable. This matches the existing Web functionality.
+
+**Media Library Show Dates (Mobile)** - The Media Library will now show the datestamp of the photo to allow for easier navigation.
+
+**App Icon Update (Mobile)** - The app icon has been updated to make it easier to differentiate from the CRISP-CES icon. This update will occur when the next non-OTA build is released.
+
+**Sync Expiration Option (Mobile)** - In order to keep the amount of data being synced to the Mobile device reasonable, we have implemented Sync Expiration options. Users will be able to choose between 30 days (default), 60 days, and Unlimited. After the expiration, data is NOT deleted from the Mobile device, but is hidden and will no longer stay in sync with changes made on the Web.
+
+#### Bugs
+
+**Report Output Update (Web)** - Previously, the report output was sized to A4 instead of Letter. This has been corrected.
+
+**Special Characters in OfficeId (Web)** - Certain special characters (in particular "/") could cause issues in the Web app. This has been restricted to only allow numbers, alphabetical characters, and dashes.
+
+**Photo Quality (Mobile)** - Photos taken through the Mobile app were being double compressed, causing degredation in photo quality
+
 ## 03/18/2022 Release
 
 #### Notes
-This is an update for both Web and Mobile, mostly focusing on bugf fixes. The Mobile update is via an OTA (over-the-air) process within the app itself. You should ONLY be prompted to update if you have no outstanding items that have not synced to the back end. If you force the update (via the Settings page) you risk losing unsynced data.
+This is an update for both Web and Mobile, mostly focusing on bug fixes. The Mobile update is via an OTA (over-the-air) process within the app itself. You should ONLY be prompted to update if you have no outstanding items that have not synced to the back end. If you force the update (via the Settings page) you risk losing unsynced data.
 
 #### Bugs
 
