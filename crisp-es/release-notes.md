@@ -25,7 +25,7 @@ As features are released and bugs are squashed, we will post updates to this pag
 
 **Special Characters in OfficeId (Web)** - Certain special characters (in particular "/") could cause issues in the Web app. This has been restricted to only allow numbers, alphabetical characters, and dashes.
 
-**Photo Quality (Mobile)** - Photos taken through the Mobile app were being double compressed, causing degredation in photo quality
+**Photo Quality (Mobile)** - Photos taken through the Mobile app were being double compressed in some cases, causing degredation in photo quality
 
 ## 03/18/2022 Release
 
