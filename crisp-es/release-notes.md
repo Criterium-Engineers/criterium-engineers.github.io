@@ -5,6 +5,12 @@ title: CRISP-ES by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 04/18/2022 Release
+
+#### Hotfix
+
+**Fix Invisible Save Button on New Project Creation (Mobile)** - After the last release, the Save button had disappeared. This OTA update resolves that issue.
+
 ## 04/08/2022 Release
 
 **Copy Photo to Another System (Web & Mobile)** - Using the triple dot menu visible wherever a photo is displayed, the user can now choose 'Copy', which will allow them to assign a photo to another system. This creates a copy so that it can be annotated differently.
