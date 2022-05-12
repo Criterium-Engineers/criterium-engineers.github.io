@@ -5,6 +5,23 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 5/12/2022 Release
+
+#### Notes
+
+This is an update for web and mobile.
+
+#### Features
+
+**For mobile** - Mock Up and Air Barrier have been removed from the inspection type dropdown. The data usage of the app will be recorded on the backend for troubleshooting purposes. 
+
+**For web** - An observation can be created when an inspection is in reviewing or revising status. When creating a project, a code is no longer required. If an inspection has a phase it will be included in the status update email. Disclainer on the PAS report will print on inspections that have a milestone stamp, the disclaimer language has been made more general purpose.
+
+#### Bug Fixes
+
+**For web** - The page header in the reports has be re-formatted so that long addresses and comapny names will not overlap the page content. Project names with special symbols (&, etc) will not cause errors in report generation. 
+
+
 ## 4/22/2022 Release
 
 #### Notes
