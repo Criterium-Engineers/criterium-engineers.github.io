@@ -5,6 +5,25 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 6/10/2022 Release
+
+#### Notes
+
+This is an update for web and mobile.
+
+#### Features
+
+**For mobile** - Code has been added to start filling in phase ids as a next step to limit downloading of inspections that belong to inactive phases.
+
+**For web** - Added the ability to close current and prior IOCs/NCIs. Added the ability to create and modify stage notes.
+
+#### Bug Fixes
+
+**For web** - The annotation color on correction observations is now green. The milestone table on standard reports will no longer break across pages. Adjusted the padding on the header of the standard report so it will not slip under report sections.
+
+**For mobile** - Added logic to prevent the missing milestone table when a new inspection is created.
+
+
 ## 5/12/2022 Release
 
 #### Notes
