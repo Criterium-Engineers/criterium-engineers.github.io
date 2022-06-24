@@ -5,6 +5,17 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 6/24/2022 Release
+
+#### Notes
+
+This is an update for web.
+
+#### Features
+
+**For web** - A dashboard has been added for reviewing engineers. A cover letter tab has been added to the inspection view, this will be used initially
+with infrared thermographic inspections.
+
 ## 6/10/2022 Release
 
 #### Notes
