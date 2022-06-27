@@ -5,7 +5,7 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
-## 6/24/2022 Release
+## 6/27/2022 Release
 
 #### Notes
 
