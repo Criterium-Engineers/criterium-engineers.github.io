@@ -5,6 +5,23 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 7/15/2022 Release
+
+#### Notes
+
+This is an update for web and mobile.
+
+#### Features
+
+**For mobile** - Inspection type has been added for Infrared. New app icon to differentiate from other Criterium mobile apps.
+
+**For web** - Ability to move an observation to a new spot in the CSI hierarchy.
+
+#### Bug Fixes
+
+**For web** - Photo annotation screen has been changed so that lower part of photo is not covered up by text annotation box.
+
+
 ## 6/27/2022 Release
 
 #### Notes
