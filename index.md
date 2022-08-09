@@ -15,7 +15,8 @@ This is an update for web and mobile.
 
 **For mobile** - Data from inspection phases that have been marked inactive will not be synchronized to the iPad.
 
-**For web** - Observation photos at end of report will be grouped by inspection point, and opening/closing observation will be grouped together.
+**For web** - Observation photos at end of report will be grouped by inspection point, and opening/closing observation will be grouped together. Photos
+can be marked 'excluded' so that they do not appear on report.
 
 
 ## 7/15/2022 Release
