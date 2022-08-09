@@ -5,6 +5,19 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 8/9/2022 Release
+
+#### Notes
+
+This is an update for web and mobile.
+
+#### Features
+
+**For mobile** - Data from inspection phases that have been marked inactive will not be synchronized to the iPad.
+
+**For web** - Observation photos at end of report will be grouped by inspection point, and opening/closing observation will be grouped together.
+
+
 ## 7/15/2022 Release
 
 #### Notes
