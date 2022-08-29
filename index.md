@@ -5,6 +5,20 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 8/29/2022 Release
+
+#### Notes
+
+This is an update for web.
+
+#### Features
+
+**For web** - Ability to create an inspection on the web.
+
+#### Bug Fixes
+
+**For web** - Aging status of inspections on dashboard will only count working days. Holidays are not calculated..... yet.
+
 ## 8/9/2022 Release
 
 #### Notes
