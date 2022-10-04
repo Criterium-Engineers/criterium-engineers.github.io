@@ -5,6 +5,23 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 10/4/2022 Release
+
+#### Notes
+
+This is an update for web and mobile
+
+#### Features
+
+**For web** - Inspection status updates are shown at bottom of overview tab. IOC/NCI counts on overview page are scoped by phase so they agree
+with the report.
+
+**For mobile** - IOC/NCI counts on badges at top of inspection are scoped by phase so that they agree with report.
+
+#### Bug Fixes
+
+**For mobile** - An error due to duplicated favorite projects has been fixed.
+
 ## 8/29/2022 Release
 
 #### Notes
