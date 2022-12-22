@@ -5,6 +5,20 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 12/23/2022 Release
+
+#### Notes
+
+This is an update for web only
+
+#### Features
+
+**For web** - Ability to change reviewer on inspection while in reviewing status. An email distribution list has been added to projects in preparation for emailing reports directly from CRISP.
+
+#### Bug Fixes
+
+**For web** - Fix format when long distribution list breaks across page. Fix black screens resulting from missing fields.
+
 ## 10/4/2022 Release
 
 #### Notes
