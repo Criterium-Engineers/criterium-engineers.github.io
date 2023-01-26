@@ -5,6 +5,16 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 1/27/2022 Release
+
+#### Notes
+
+This is an update for web only
+
+#### Features
+
+**For web** - Ability to convert observations from one type to another (IOC/NCI/Conforming), the annotation colors in photos are updated as well. Added a Kessler report template. Removed the 'Promote to Global' button from inspection point editing.
+
 ## 12/23/2022 Release
 
 #### Notes
