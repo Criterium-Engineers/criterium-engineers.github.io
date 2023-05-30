@@ -5,6 +5,16 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 5/30/2023 Release
+
+#### Notes
+
+This is an update for web only
+
+#### Features
+
+**For web** - Update to front end libraries to latest versions. The only difference users should see is that the login dialog looks a little different. An update to the water test report that includes standard language, equipment certification links and use of new hierarchy nodes for recording specimen pass/fail and equipment observations. Instructions for use of the template will come in a separate email.
+
 ## 1/27/2022 Release
 
 #### Notes
