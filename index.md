@@ -5,6 +5,16 @@ title: CRISP by Criterium Engineers Release Notes
 
 As features are released and bugs are squashed, we will post updates to this page so that users can know what to expect.
 
+## 7/10/2023 Release
+
+#### Notes
+
+This is an update for web only
+
+#### Features
+
+**For web** - The activity tracker on the inspection overview page now shows updates done on mobile and over the api. Phases in the inspection list views are sortable. There is now a 'Site Not Ready' report.
+
 ## 5/30/2023 Release
 
 #### Notes
