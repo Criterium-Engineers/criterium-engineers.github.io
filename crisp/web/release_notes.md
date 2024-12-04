@@ -1,4 +1,6 @@
-## CRISP Web Release
+<h1 align="center">CRISP Web Release</h1>
+
+<div style="margin-left: 600px; margin-right: 600px;">
 
 <details>
 <summary><b>07/10/2023 Release</b></summary>
@@ -32,7 +34,7 @@
 
 ---
 
-<details>
+<details >
 <summary><b>05/30/2023 Release</b></summary>
 
 ### Notes
@@ -63,7 +65,7 @@
 
 ---
 
-<details>
+<details >
 <summary><b>01/27/2022 Release</b></summary>
 
 ### Notes
@@ -941,3 +943,5 @@
 - Various non-user-facing updates to improve overall performance and reliability.
 
 </details>
+
+</div>

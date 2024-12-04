@@ -1,4 +1,6 @@
-## CRISP Mobile Release
+<h1 align="center">CRISP Mobile Release</h1>
+
+<div style="margin-left: 600px; margin-right: 600px;">
 
 <details>
 <summary><b>CRISP 1.5.2</b></summary>
@@ -331,7 +333,7 @@
 
 </details>
 
---
+---
 
 <details>
 <summary><b>CRISP 1.1.3</b></summary>
@@ -651,3 +653,5 @@
 - Various non-user-facing updates to improve overall performance and reliability.
 
 </details>
+
+</div>
