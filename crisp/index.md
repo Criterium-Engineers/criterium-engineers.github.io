@@ -47,6 +47,7 @@ For the full list of changes, visit the Web Release Notes link above.
 For updates related to the CRISP Mobile application, please refer to the Mobile release notes section below ⬇️:
 
 <details>
+
 <summary><b>View Notes</b></summary>
 
 [🔗 View Full Mobile Release Notes](/crisp/mobile/release_notes.html)
