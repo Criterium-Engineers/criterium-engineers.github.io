@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>release_notes.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///home/slozier/Documents/markdown-pdf.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="crisp-web-release">CRISP Web Release</h2>
+<details>
+<summary><b>07/10/2023 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release enhances the inspection overview page with activity tracking, adds sorting to inspection list views, and introduces a new report type.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Activity Tracker Updates</strong>:
+<ul>
+<li>The activity tracker on the inspection overview page now displays updates done on mobile and via the API.</li>
+</ul>
+</li>
+<li><strong>Sortable Inspection List Views</strong>:
+<ul>
+<li>Phases in the inspection list views are now sortable, improving usability.</li>
+</ul>
+</li>
+<li><strong>'Site Not Ready' Report</strong>:
+<ul>
+<li>Introduced a new &quot;Site Not Ready&quot; report to assist with inspection documentation.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>05/30/2023 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release focuses on frontend library updates and enhancements to the water test report.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Frontend Library Updates</strong>:
+<ul>
+<li>Updated frontend libraries to the latest versions. The login dialog now has a slightly updated appearance.</li>
+</ul>
+</li>
+<li><strong>Water Test Report Updates</strong>:
+<ul>
+<li>Added standard language, equipment certification links, and new hierarchy nodes for recording specimen pass/fail and equipment observations.</li>
+<li>Instructions for using the updated template will be provided in a separate email.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>01/27/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces observation conversion functionality, photo annotation updates, and new templates.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Convert Observation Types</strong>:
+<ul>
+<li>Added the ability to convert observations between IOC, NCI, and Conforming types. Annotation colors in photos are also updated accordingly.</li>
+</ul>
+</li>
+<li><strong>Kessler Report Template</strong>:
+<ul>
+<li>Introduced a new Kessler report template.</li>
+</ul>
+</li>
+<li><strong>Inspection Point Editing</strong>:
+<ul>
+<li>Removed the &quot;Promote to Global&quot; button from inspection point editing.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>12/23/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new features for inspection reviewer changes and email distribution lists, along with bug fixes for formatting and missing fields.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Change Reviewer in Reviewing Status</strong>:
+<ul>
+<li>Users can now change the reviewer for an inspection while it is in reviewing status.</li>
+</ul>
+</li>
+<li><strong>Email Distribution List</strong>:
+<ul>
+<li>Added an email distribution list to projects to prepare for emailing reports directly from CRISP.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Distribution List Formatting</strong>:
+<ul>
+<li>Resolved formatting issues where long distribution lists would break across the page.</li>
+</ul>
+</li>
+<li><strong>Black Screens from Missing Fields</strong>:
+<ul>
+<li>Fixed issues causing black screens due to missing fields.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>10/05/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces scoped IOC/NCI counts on the overview page and inspection status updates in the overview tab.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Inspection Status Updates in Overview Tab</strong>:
+<ul>
+<li>Inspection status updates are now displayed at the bottom of the overview tab, improving visibility.</li>
+</ul>
+</li>
+<li><strong>Scoped IOC/NCI Counts</strong>:
+<ul>
+<li>IOC/NCI counts on the overview page are now scoped by phase, ensuring consistency with the report.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>08/29/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces functionality for creating inspections directly on the Web and includes a bug fix for inspection aging status calculations.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Create Inspections on Web</strong>:
+<ul>
+<li>Users can now create inspections directly from the Web application, expanding the platform's capabilities.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Inspection Aging Status</strong>:
+<ul>
+<li>The aging status of inspections on the dashboard now accounts for working days only. Holidays are not included in the calculation (yet).</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>07/17/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces functionality for managing observations in the CSI hierarchy and includes fixes for photo annotation screens.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Move Observations in CSI Hierarchy</strong>:
+<ul>
+<li>Added the ability to move an observation to a new spot within the CSI hierarchy, providing greater flexibility in organizing inspection data.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Photo Annotation Screen Adjustment</strong>:
+<ul>
+<li>Resolved an issue where the lower part of the photo was covered by the text annotation box, ensuring a better user experience.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>07/17/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces functionality for managing observations in the CSI hierarchy and includes fixes for photo annotation screens.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Move Observations in CSI Hierarchy</strong>:
+<ul>
+<li>Added the ability to move an observation to a new spot within the CSI hierarchy, providing greater flexibility in organizing inspection data.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Photo Annotation Screen Adjustment</strong>:
+<ul>
+<li>Resolved an issue where the lower part of the photo was covered by the text annotation box, ensuring a better user experience.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>06/27/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new features for reviewing engineers and enhances the inspection view with a cover letter tab.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Dashboard for Reviewing Engineers</strong>:
+<ul>
+<li>Added a dedicated dashboard to assist reviewing engineers in managing and reviewing inspections more effectively.</li>
+</ul>
+</li>
+<li><strong>Cover Letter Tab in Inspection View</strong>:
+<ul>
+<li>Introduced a cover letter tab in the inspection view, initially designed for use with infrared thermographic inspections.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>06/10/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new features for managing IOCs/NCIs and stage notes, along with fixes for annotation colors and report formatting.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Close Current and Prior IOCs/NCIs</strong>:
+<ul>
+<li>Added functionality to close both current and prior IOCs/NCIs, streamlining the process for managing inspection corrections.</li>
+</ul>
+</li>
+<li><strong>Create and Modify Stage Notes</strong>:
+<ul>
+<li>Users can now create and modify stage notes, enhancing documentation capabilities during inspections.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Annotation Color for Correction Observations</strong>:
+<ul>
+<li>Updated the annotation color for correction observations to green for consistency.</li>
+</ul>
+</li>
+<li><strong>Milestone Table Formatting</strong>:
+<ul>
+<li>Fixed an issue where the milestone table on standard reports would break across pages.</li>
+</ul>
+</li>
+<li><strong>Standard Report Header Padding</strong>:
+<ul>
+<li>Adjusted the padding on the header of the standard report to ensure it does not slip under report sections.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>05/12/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces enhancements to observation creation, project setup, and PAS reports, along with bug fixes for report formatting and project name handling.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Create Observations in Reviewing or Revising Status</strong>:
+<ul>
+<li>Observations can now be created even when an inspection is in Reviewing or Revising status.</li>
+</ul>
+</li>
+<li><strong>Project Code Requirement Removed</strong>:
+<ul>
+<li>A project code is no longer required when creating a new project.</li>
+</ul>
+</li>
+<li><strong>Phase Included in Status Update Emails</strong>:
+<ul>
+<li>Status update emails now include the inspection phase if one is assigned.</li>
+</ul>
+</li>
+<li><strong>PAS Report Disclaimer</strong>:
+<ul>
+<li>Updated the disclaimer language on PAS reports with milestone stamps to be more general-purpose.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Report Header Formatting</strong>:
+<ul>
+<li>Resolved issues with long addresses and company names overlapping the report content by reformatting the page header.</li>
+</ul>
+</li>
+<li><strong>Project Names with Special Characters</strong>:
+<ul>
+<li>Fixed errors in report generation caused by project names containing special symbols (e.g., <code>&amp;</code>).</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>04/20/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new functionality for managing prior items and hierarchy visibility while resolving critical bugs.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Prior Items in Inspection View</strong>:
+<ul>
+<li>Prior items are now visible directly in the inspection view, improving access to historical inspection data.</li>
+</ul>
+</li>
+<li><strong>Hierarchy Items Hidden Attribute</strong>:
+<ul>
+<li>Added the ability to set a hidden attribute for hierarchy items using a checkbox. This feature will be used to scope down the hierarchy visible on the iPad in the future.</li>
+</ul>
+</li>
+<li><strong>Closing Observation Text</strong>:
+<ul>
+<li>The text for a closing observation is now automatically pulled from the primary photo description, eliminating the need to set it in multiple places.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Missing Arrival Time Warning</strong>:
+<ul>
+<li>Added a warning message to notify users if the EFT forgets to set the arrival time.</li>
+</ul>
+</li>
+<li><strong>Report Rendering for Large Data Sets</strong>:
+<ul>
+<li>Fixed an issue where reports with over 100 inspections failed to render correctly.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>04/05/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release focuses on addressing technical debt by upgrading the libraries the Web application relies on. No new Web-specific features were introduced.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ol>
+<li><strong>Library Upgrades</strong>:
+<ul>
+<li>Updated underlying libraries to improve performance, maintainability, and compatibility.</li>
+</ul>
+</li>
+</ol>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>02/02/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces a new custom report template and resolves an issue with the pending tab for observations.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Custom Report Template for Fairfield Residential</strong>:
+<ul>
+<li>A new custom report template has been added to support Fairfield Residential.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Pending Tab for Observations</strong>:
+<ul>
+<li>Fixed an issue where the pending tab for observations was not functioning correctly.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>01/11/2022 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces enhancements to photo ordering, observation management, and restructuring of the PAS Report on the Web application.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Reorder Inspection and Observation Photos</strong>:
+<ul>
+<li>Users can now drag and drop photos into a specific order, which will be reflected in the Standard Report.</li>
+</ul>
+</li>
+<li><strong>Delete an Observation</strong>:
+<ul>
+<li>Observations can now be deleted when an inspection is in Reviewing or Revising status.</li>
+</ul>
+</li>
+<li><strong>PAS Report Restructuring</strong>:
+<ul>
+<li>The PAS Report has been restructured with the following changes:
+<ul>
+<li><strong>All Open NCIs/IOCs</strong>: Includes both prior items and unreviewed new items.</li>
+<li><strong>Newly Closed NCIs/IOCs</strong>: Includes any reviewed or unreviewed corrections that have not appeared on previous reports. This also includes items closed on the associated inspection date and corrections with overridden dates created with this report.</li>
+<li>The PAS will no longer print the full record of all prior items if they appeared closed on a previous report.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>12/20/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new features for handling correction/resolution dates, submission statuses, and phase selection on the Web application.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Correction / Resolution Date</strong>:
+<ul>
+<li>Users can now set a correction/resolution date that differs from the inspection date to handle off-cycle corrections received virtually.</li>
+<li><strong>Note</strong>: Add a notation to the Field Notes and Internal Comments to reference the date change.</li>
+</ul>
+</li>
+<li><strong>Submitting Status Indicator</strong>:
+<ul>
+<li>Reviewing Engineers can now start a review for reports that display either Submitted or Submitting status.</li>
+</ul>
+</li>
+<li><strong>New Scroll Bar for Phase Selection</strong>:
+<ul>
+<li>Projects with more than three Phases now display a scroll bar for improved Phase selection during a new inspection.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>12/01/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new functionality for managing closing observation dates and ensures consistency in photo order between the Web app and reports.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Change Date on Closing Observation</strong>:
+<ul>
+<li>Users can now change the date on a closing observation to be different from the inspection date.</li>
+</ul>
+</li>
+<li><strong>Consistent Photo Order</strong>:
+<ul>
+<li>The order of site progress and observation photos in reports will now match the order in which they appear in the Web application.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>10/25/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release includes backend changes to facilitate more rapid development and deployment, along with a fix for Standard Report Output.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Extra Locations on Standard Report Output</strong>:
+<ul>
+<li>Resolved an issue where &quot;extra&quot; locations were not printing out on the Standard Report Output. These are now included as expected.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>Backend improvements to support faster development and deployment.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ol>
+<li>Enhanced infrastructure to streamline future development processes.</li>
+</ol>
+</details>
+<hr>
+<details>
+<summary><b>10/08/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces changes to the standard report, enhancing the organization and readability of inspection data.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Open IOCs and NCIs Ordering</strong>:
+<ul>
+<li>Open IOCs and NCIs are now ordered by date and then code in ascending order, making it easier to review.</li>
+</ul>
+</li>
+<li><strong>Milestone Visit Log Relocation</strong>:
+<ul>
+<li>The additional inspection log for milestone visits has been moved to the end of the field notes section.</li>
+</ul>
+</li>
+<li><strong>Field Notes Layout Update</strong>:
+<ul>
+<li>Field notes are now displayed in two columns for a less crowded and more organized appearance.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>09/29/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release focuses on significant performance enhancements for the Mobile application. No Web-specific features or updates are included in this release.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>09/09/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces enhancements to inspection number filtering and site progress photo management on the Web application.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Inspection Number Helper Enhancement 2</strong>:
+<ul>
+<li>The inspection number helper now filters by the current inspection phase, making it easier for Reviewing Engineers and Admins to assign accurate inspection numbers.</li>
+</ul>
+</li>
+<li><strong>Site Progress Photo Uploads</strong>:
+<ul>
+<li>Users can now upload Site Progress Photos from the CRISP Web application to any Inspection that is in an editable status.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>08/26/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release addresses several improvements in inspection numbering, PAS report output, and contact management on the Web application.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Inspection Number Helper Enhancement</strong>:
+<ul>
+<li>Added a Phase to assist Reviewing Engineers and Admins in properly numbering inspections.</li>
+</ul>
+</li>
+<li><strong>PAS Report Output</strong>:
+<ul>
+<li>The PAS report output now includes all unreviewed NCI and IOC observations.</li>
+</ul>
+</li>
+<li><strong>Report Output Provider</strong>:
+<ul>
+<li>Switched from the SaaS version of JSReports to the self-hosted version to mitigate timeouts.</li>
+</ul>
+</li>
+<li><strong>Report Output Change - Milestones</strong>:
+<ul>
+<li>The report output for Milestone inspections now includes ALL milestones, regardless of whether an inspection has been conducted against them.</li>
+</ul>
+</li>
+<li><strong>Project Details &gt; Contacts</strong>:
+<ul>
+<li>Contacts previously associated with a client are now prioritized at the top of the list when adding new contacts.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>08/12/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces features for enhanced project management and status notifications, along with troubleshooting updates for Mobile.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Status Change Notifications</strong>:
+<ul>
+<li>Users associated with a Project (e.g., EFT, Project Admin, Reviewing Engineer) now receive email notifications of status changes in inspections.</li>
+</ul>
+</li>
+<li><strong>Project Path</strong>:
+<ul>
+<li>A new field has been added to Project Details to store the Project Path attribute from the Criterium ERP system (currently InFocus).</li>
+</ul>
+</li>
+</ol>
+<h3 id="troubleshooting-features">Troubleshooting Features</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>07/27/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release adds enhancements for managing photos, milestone workflows, and weather data on the Web application.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Designate Primary Location Group</strong>:
+<ul>
+<li>Users can now designate the Primary Location Group using a checkbox in Edit mode. This determines what appears in the Report Output Template grids.</li>
+</ul>
+</li>
+<li><strong>Add Photos to Observations</strong>:
+<ul>
+<li>Users can now add photos to NCI/IOC/CI Observations while in Edit mode for Submitted or In Review status. Photos appear after exiting Edit mode.</li>
+</ul>
+</li>
+<li><strong>PDF Report Output Naming</strong>:
+<ul>
+<li>PDF reports are automatically named using the format: <code>Client Name - Project Name - Phase (if available) - Inspection # (including code, if not Standard) - Inspection Date (MM-DD-YYYY).pdf</code>.</li>
+</ul>
+</li>
+<li><strong>Manual Weather Editing</strong>:
+<ul>
+<li>Weather conditions can now be edited directly in the Inspection Details section. This feature helps when historical Weather API data is unavailable or incorrect.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Template Status Column</strong>:
+<ul>
+<li>Fixed an issue where the Status column in the Templates section was not properly populating.</li>
+</ul>
+</li>
+<li><strong>Order of Milestones Not Being Respected</strong>:
+<ul>
+<li>Milestones now display in the correct order as defined in the Milestone Template.</li>
+</ul>
+</li>
+<li><strong>Not Able to Delete Observation Photo</strong>:
+<ul>
+<li>Resolved an issue preventing the deletion of Observation photos.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>07/08/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release does not include Web-specific features but addresses Mobile-specific bug fixes and infrastructure updates.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>07/01/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces features to enhance the handling of weather data, milestone tracking, and phase management.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Retrigger Weather from Web</strong>:
+<ul>
+<li>Users can now retrigger the API call to grab weather data when setting the inspection date and arrival time. This is subject to a 5-day historical limit. Manual population of weather fields will be available in a future release.</li>
+</ul>
+</li>
+<li><strong>Weather Visibility in Web</strong>:
+<ul>
+<li>Weather observations are now visible in the Inspection Details alongside the rest of the Field Notes data.</li>
+</ul>
+</li>
+<li><strong>Reviewing Engineer Assignment</strong>:
+<ul>
+<li>The Reviewing Engineer is now assigned at the Project level upon Inspection creation and reflected in the Inspections grids and report outputs.</li>
+</ul>
+</li>
+<li><strong>Phase Name Editing</strong>:
+<ul>
+<li>Phase names can now be modified freely after entry.</li>
+</ul>
+</li>
+<li><strong>Unit Name Editing</strong>:
+<ul>
+<li>Units can now be modified freely after entry.</li>
+</ul>
+</li>
+<li><strong>Report Output Scoped to Phase</strong>:
+<ul>
+<li>Observations in the Report Output are now scoped to the same phase.</li>
+</ul>
+</li>
+<li><strong>Milestone Inspection Matrix</strong>:
+<ul>
+<li>A matrix-style display of Milestones and Units has been added to the Inspection Details page, allowing Reviewing Engineers to track completed Milestones.</li>
+</ul>
+</li>
+</ol>
+<h3 id="infrastructure-updates">Infrastructure Updates</h3>
+<ol>
+<li><strong>Upgrade the AWS Amplify CLI</strong>:
+<ul>
+<li>Upgraded AWS Amplify CLI to address common data issues, reducing the frequency of reported problems.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>06/17/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces features for managing phases, milestones, and observations, along with improved inspection workflows.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Project Phase</strong>:
+<ul>
+<li>Users can now define Units under each Phase. This functionality builds towards scoping Observations to Phases.</li>
+<li><strong>Note</strong>: Observation scoping to phases is not yet available and will be addressed in a future release.</li>
+</ul>
+</li>
+<li><strong>Hierarchy Scope</strong>:
+<ul>
+<li>Users can now define the default Hierarchy Scope of a Project, with changes flowing between Web and Mobile apps.</li>
+</ul>
+</li>
+<li><strong>Milestone Bundles and Templates</strong>:
+<ul>
+<li>Introduced the ability to define Milestone Bundles (groups of CSI Categories) and combine them into Milestone Templates. These can be assigned to Projects.</li>
+<li>Additional work is needed for Mobile and Report Templates to fully support this feature.</li>
+</ul>
+</li>
+<li><strong>Observation Review Workflow Change</strong>:
+<ul>
+<li>Observations now open to the tab where action can be taken (e.g., resolution/correction), reducing confusion about missing APPROVE/DECLINE buttons.</li>
+</ul>
+</li>
+<li><strong>Revise Mode</strong>:
+<ul>
+<li>Reports in a 'Final' state (Approved or Sent) can now be opened for revising without kicking them back to the EFT.</li>
+</ul>
+</li>
+<li><strong>Reviewing Engineer Name on Inspections Grid</strong>:
+<ul>
+<li>The Reviewing Engineer is now displayed on the Inspections grid.</li>
+</ul>
+</li>
+<li><strong>Display Inspection Number in Inspections Grids</strong>:
+<ul>
+<li>Inspection numbers are now visible in tab-filtered grids if assigned.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Unable to Generate Report</strong>:
+<ul>
+<li>Fixed an issue where timeout limits were being hit during report generation.</li>
+</ul>
+</li>
+</ol>
+<h3 id="backend-changes">Backend Changes</h3>
+<ul>
+<li>None specific to this release.</li>
+</ul>
+<h3 id="other-changes">Other Changes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>05/21/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release introduces new features and improves flexibility in generating reports and managing inspections.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ol>
+<li><strong>Preliminary Action Summary (PAS)</strong>:
+<ul>
+<li>Enabled PAS report generation on the Web interface. The PAS template is a work-in-progress, currently displaying only NCIs in the last-generation report format.</li>
+</ul>
+</li>
+<li><strong>Inspection Number Enhancement</strong>:
+<ul>
+<li>Reviewing Engineers can now assign inspection numbers during the review process, aligning with predefined types like Standard, Specialty - Window Water Test, etc.</li>
+</ul>
+</li>
+<li><strong>Allow Report Generation Regardless of Status</strong>:
+<ul>
+<li>Users can now generate reports from the Web interface no matter the inspection status.</li>
+</ul>
+</li>
+<li><strong>Change Date of Inspection</strong>:
+<ul>
+<li>Added the ability to change the inspection date directly from the Web without requiring the inspection to be declined.</li>
+</ul>
+</li>
+</ol>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+<h3 id="backend-changes">Backend Changes</h3>
+<ol>
+<li><strong>Data Updates</strong>:
+<ul>
+<li>Modified data for several inspections as requested by the Criterium Team. Added work items to enable authorized users to make similar updates in the future.</li>
+</ul>
+</li>
+</ol>
+<h3 id="other-changes">Other Changes</h3>
+<ul>
+<li>None specific to the Web application.</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary><b>05/03/2021 Release</b></summary>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This release focuses on enhancing the user experience and resolving critical bugs.</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>None</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ol>
+<li><strong>Dash in Project Code</strong>:
+<ul>
+<li>Resolved an issue where dashes in project codes caused problems with Observation IDs.</li>
+</ul>
+</li>
+<li><strong>Username Case Sensitivity</strong>:
+<ul>
+<li>Updated the system to handle usernames case-insensitively, preventing mismatches between Web and Mobile.</li>
+</ul>
+</li>
+</ol>
+<h3 id="backend-changes">Backend Changes</h3>
+<ol>
+<li><strong>Backdating of Closing Observations</strong>:
+<ul>
+<li>Added the ability to backdate closing observations for easier migration of historical reports.</li>
+</ul>
+</li>
+<li><strong>New Contacts</strong>:
+<ul>
+<li>Contacts can now be saved without an email address or phone number.</li>
+</ul>
+</li>
+<li><strong>Report Enhancements</strong>:
+<ul>
+<li>Improved report readability with better formatting.</li>
+</ul>
+</li>
+</ol>
+<h3 id="other-changes">Other Changes</h3>
+<ul>
+<li>Various non-user-facing updates to improve overall performance and reliability.</li>
+</ul>
+</details>
+
+</body>
+</html>
