@@ -7,14 +7,14 @@ Welcome to the CRISP Release Notes page. Below, you'll find the latest updates f
 
 ---
 
-### Web Release Notes
+### 🖥️ Web Release Notes
 
-For updates related to the CRISP Web application, please refer to the Web release notes section below:
+For updates related to the CRISP Web application, please refer to the Web release notes section below ⬇️:
 
 <details>
-<summary><b>Web Release Notes</b></summary>
+<summary><b>View Notes</b></summary>
 
-[View Full Web Release Notes](web/release_notes.md)
+[🔗 View Full Web Release Notes](/crisp/web/release_notes.md)
 
 - **07/10/2023 Release**:
   - The activity tracker on the inspection overview page now shows updates done on mobile and over the API.
@@ -35,22 +35,22 @@ For the full list of changes, visit the Web Release Notes link above.
 
 ---
 
-### Mobile Release Notes
+### 📱 Mobile Release Notes
 
-For updates related to the CRISP Mobile application, please refer to the Mobile release notes section below:
+For updates related to the CRISP Mobile application, please refer to the Mobile release notes section below ⬇️:
 
 <details>
-<summary><b>Mobile Release Notes</b></summary>
+<summary><b>View Notes</b></summary>
 
-[View Full Mobile Release Notes](mobile/release_notes.md)
+[🔗 View Full Mobile Release Notes](crisp/mobile/release_notes.md)
 
-- **CRISP 1.5.4 (07/10/2023 Release)**:
+- **CRISP 1.5.4 Release**:
   - No Mobile-specific updates; focuses on Web application changes.
 
-- **CRISP 1.5.3 (12/23/2022 Release)**:
+- **CRISP 1.5.3 Release**:
   - No Mobile-specific updates; focuses on Web application changes.
 
-- **CRISP 1.5.2 (10/05/2022 Release)**:
+- **CRISP 1.5.2 Release**:
   - Scoped IOC/NCI counts on badges at the top of inspections.
   - Resolved errors caused by duplicated favorite projects.
 
@@ -60,6 +60,6 @@ For the full list of changes, visit the Mobile Release Notes link above.
 
 ---
 
-## Contact
+### ✉️ Contact Us
 
 Questions about what you see here? Reach out to [Deb Adams](mailto:dadams@criterium-engineers.com).
