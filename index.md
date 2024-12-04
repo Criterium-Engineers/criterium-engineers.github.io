@@ -14,7 +14,7 @@ For updates related to the CRISP Web application, please refer to the Web releas
 <details>
 <summary><b>View Notes</b></summary>
 
-[🔗 View Full Web Release Notes](/crisp/web/release_notes)
+[🔗 View Full Web Release Notes](https://github.com/Criterium-Engineers/criterium-engineers.github.io/blob/main/crisp/web/release_notes.md)
 
 - **07/10/2023 Release**:
 
@@ -49,7 +49,7 @@ For updates related to the CRISP Mobile application, please refer to the Mobile 
 <details>
 <summary><b>View Notes</b></summary>
 
-[🔗 View Full Mobile Release Notes](crisp/mobile/release_notes)
+[🔗 View Full Mobile Release Notes](https://github.com/Criterium-Engineers/criterium-engineers.github.io/blob/main/crisp/mobile/release_notes.md)
 
 - **CRISP 1.5.4 Release**:
 
